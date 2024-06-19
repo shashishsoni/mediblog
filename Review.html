@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #ffff;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            /* height: 50vh; */
+            display: flex;
+
+        }
+
+        .container {
+            position: relative;
+            height: auto;
+            max-width: 800px;
+            height: calc(100% - 100px);
+            /* 100px for header and footer combined */
+            padding: 20px;
+            background: #d39dcc;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fade-in 0.5s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 0;
+            margin-top: 80px;
+            margin-bottom: 20px;
+
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #bf75af;
+            color: #fff;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color:  #ffffff;
+        }
+
+        tbody tr:hover {
+            background-color: #e8c5de;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <div class="container">
+        <h2>Review Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Review ID</th>
+                    <th>Review Type</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Reviewed By</th>
+                    <th>Doctors Advice</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample data (replace with actual data from the backend) -->
+                <tr>
+                    <td>123</td>
+                    <td>Feedback</td>
+                    <td>Great service!</td>
+                    <td>Approved</td>
+                    <td>Dr. Abhinav</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>456</td>
+                    <td>Complaint</td>
+                    <td>Review Issue</td>
+                    <td>Pending</td>
+                    <td>Docotr Aditi</td>
+                    <td>Pending</td>
+
+                </tr>
+                <!-- Add more rows if needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+<div id="footer-placeholder"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("./header.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+    });
+
+    function toggleSidebar() {
+        document.getElementById("mySidebar").classList.toggle("show");
+    }
+
+    function openSidebar(content) {
+        document.getElementById("mySidebar").classList.toggle("show");
+        // You can add logic here to handle the content based on the clicked link (patient, doctor, community, help)
+        console.log("Clicked on: " + content);
+    }
+
+</script>
+
+</html>

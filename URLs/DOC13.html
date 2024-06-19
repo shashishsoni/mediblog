@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Manali Patel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3c7f0;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 0rem 0;
+            text-align: center;
+            border: 2px solid white;
+        }
+
+        .box-container {
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 95%;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(110, 218, 242, 0.1);
+            position: relative;
+            overflow: hidden; 
+        }
+
+        .box1 {
+            flex: 1;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-out;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .box1 h1 {
+            text-align: center;
+            color: #0d0909;
+            padding-top: 0px;
+            font-family: "Sofia", sans-serif;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typeWriter 4s steps(40) 1s forwards;
+        }
+
+        .box1 p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            opacity: 0; 
+            animation: fadeIn 3s ease-out 1s forwards;
+            color: black;
+        }
+
+        img {
+            border-radius: 250px;
+            margin-top: 100px;
+            margin-right: 30px;
+            max-width: 100%;
+            animation: zoomIn 2s ease-out;
+        }
+
+        h1,
+        h2 {
+            color: #0a0b0c;
+        }
+
+        header h1 {
+            font-family: "Audiowide", sans-serif;
+            font-size: 40px;
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #33485e;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #fafafa;
+            color: #100d0d;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 99.7%;
+            border: 2px solid white;
+        }
+
+       
+        @keyframes typeWriter {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="font-effect-emboss">Dr.Manali Patel</h1>
+    </header>
+
+    <div class="box-container">
+        <img src="/images/DOC13.png" alt="">
+        <div class="box1">
+            <h1>Health equity and quality care in cancer care</h1>
+            <p>
+                Cancer health disparities describe the measurable differences in cancer outcomes in various population groups.
+                 When the United States began collecting cancer data in January 1973 through the SEER program,2 differences among
+                  populations became apparent in terms of incidence, prevalence, stage at diagnosis, morbidity, and mortality.
+                   As SEER and other population data grew more robust, variations in screening, survivorship, quality of life,
+                    and compounding health conditions were also observed. Over time, the analytic context of research on health 
+                    disparities in the United States expanded to include race and ethnicity, age, sexual orientation and gender 
+                    identity, education, socioeconomic status, insurance access and type of insurance, environmental exposures,
+                    and geography, among other factors.<br><br>
+                    Health equity contextualizes health disparities through a lens of historical and social hierarchy and requires
+                    action to remedy injustice and improve health. Health equity is defined as everyone having a fair and just
+                     opportunity to be as healthy as possible, an ethical and human rights principle that motivates us to eliminate
+                     health disparities.<br><br>
+                      In this view, health disparities are the preventable results of structural discrimination
+                      and marginalization, which, if left unaddressed, will continue to reinforce social and economic inequities,
+                       bias, and poor outcomes that affect us all.4 The concept of cancer health equity acknowledges that much 
+                       work needs to be done to overcome the historical momentum and the existing social structures responsible
+                        for disparate cancer outcomes and that this work can achieve its goal only through collaborative efforts
+                        with the communities involved. For ASCO, cancer health equity is a guiding institutional principle that
+                        that we strive to apply to all ASCO activities across the cancer care continuum, from advocacy to research 
+                        to the development of learners and leaders.
+                Reference:-
+                <a
+                    href="https://www.cancer.net/blog/2022-12/what-do-%E2%80%9Chealth-equity%E2%80%9D-and-%E2%80%9Cquality-care%E2%80%9D-mean-cancer-care">https://www.cancer.net/blog/2022-12/what-do-%E2%80%9Chealth-equity%E2%80%9D-and-%E2%80%9Cquality-care%E2%80%9D-mean-cancer-care</a>
+
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Doctor Research Blog</p>
+    </footer>
+
+</body>
+
+</html>

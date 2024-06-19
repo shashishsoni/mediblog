@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Jeff Boothman</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3c7f0;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 0rem 0;
+            text-align: center;
+            border: 2px solid white;
+        }
+
+        .box-container {
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 95%;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(110, 218, 242, 0.1);
+            position: relative;
+            overflow: hidden; 
+        }
+
+        .box1 {
+            flex: 1;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-out;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .box1 h1 {
+            text-align: center;
+            color: #0d0909;
+            padding-top: 0px;
+            font-family: "Sofia", sans-serif;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typeWriter 4s steps(40) 1s forwards;
+        }
+
+        .box1 p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            opacity: 0; 
+            animation: fadeIn 3s ease-out 1s forwards;
+            color: black;
+        }
+
+        img {
+            border-radius: 250px;
+            margin-top: 100px;
+            margin-right: 30px;
+            max-width: 100%;
+            animation: zoomIn 2s ease-out;
+        }
+
+        h1,
+        h2 {
+            color: #0a0b0c;
+        }
+
+        header h1 {
+            font-family: "Audiowide", sans-serif;
+            font-size: 40px;
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #33485e;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #fafafa;
+            color: #100d0d;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 99.7%;
+            border: 2px solid white;
+        }
+
+       
+        @keyframes typeWriter {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="font-effect-emboss">Dr. Jeff Boothman</h1>
+    </header>
+
+    <div class="box-container">
+        <img src="/images/DOC12.png" alt="">
+        <div class="box1">
+            <h1>Reducing stress in cancer patients</h1>
+            <p>
+                Surprises or unknown steps in the treatment process added a lot of stress for me. For instance, during my first day of inpatient chemotherapy, I was scheduled for several procedures I had no idea were coming: a heart sonogram, a peripherally inserted central catheter (PICC) line insertion, and a bone marrow check. As each of these
+                 items were “added” to my day, my stress increased.Looking back, I did not do a great job of asking for the exact details of what would be involved with my treatment plan. I thought starting chemotherapy meant being hooked up to an intravenous (IV) line as soon as I arrived at the hospital. In reality, I had a day of tests and
+                  needed a PICC line before I even got to start the treatment.My advice for others who have been newly diagnosed with cancer is to ask about and know every step in your treatment plan, even hour by hour, before you start. It eliminates surprises and the stress that can come with treatment.<br><br>
+                  As I was progressing through my surgeries, chemotherapy, and radiation treatments, I would find that there was often some flexibility in the treatment plan itself. For instance, I found out that there were newer magnetic resonance imaging (MRI) machines I could use for scans that were much larger
+                   and less stressful for me than older models. I also learned that my chemotherapy time could be slightly reduced so I could make a once-in-a-lifetime event with one of my kids. And, when in the hospital, I found that there are almost always ways to make your room darker so sleep is easier.
+                   <br><br>
+                   One of the other things that added a lot of stress to my treatment were the side effects and complications I experienced, including needing a blood transfusion, experiencing constipation, and having awful back pain, to name just a few. Sometimes, I was told about the possibility of the issues. Other times, I was not.
+Oftentimes, when I was discussing treatment with my doctor, I focused on what was supposed to happen if things went right. But I learned that when discussing treatment, you really need to figure out what could go wrong, too. It’s not entirely natural to look for more problems when you are already sick, but for me, I found it was an important tactic to reducing stress. Knowing all the possible “bad” things that could come along with a treatment allows you to decide how you will respond before the complications or side effects show up. I found that putting a plan into place before experiencing complications is much easier than trying to create one after the side effects have already arrived. It’s also much less stressful.
+If you are getting ready to start treatment, my advice would be to ask about all of the side effects and complications that could occur with any treatment in your recommended treatment plan. Then, decide with your health care team how you will deal with them before you even start the treatment. 
+Being diagnosed with cancer and going through treatment can be difficult. But by putting in the effort to work on the 3 things I outlined above, I found that it is 100% possible to reduce the stresses that arise during cancer treatment
+
+                Reference:-
+                <a
+                    href="https://www.cancer.net/blog/2024-01/3-things-reduce-stress-during-cancer-treatment-patients-perspective">https://www.cancer.net/blog/2024-01/3-things-reduce-stress-during-cancer-treatment-patients-perspective</a>
+
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Doctor Research Blog</p>
+    </footer>
+
+</body>
+
+</html>

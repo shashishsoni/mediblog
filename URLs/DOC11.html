@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Nafisa Taha</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3c7f0;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 0rem 0;
+            text-align: center;
+            border: 2px solid white;
+        }
+
+        .box-container {
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 95%;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(110, 218, 242, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box1 {
+            flex: 1;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-out;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .box1 h1 {
+            text-align: center;
+            color: #0d0909;
+            padding-top: 0px;
+            font-family: "Sofia", sans-serif;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typeWriter 4s steps(40) 1s forwards;
+        }
+
+        .box1 p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            opacity: 0;
+            animation: fadeIn 3s ease-out 1s forwards;
+            color: black;
+        }
+
+        img {
+            border-radius: 250px;
+            margin-top: 100px;
+            margin-right: 30px;
+            max-width: 100%;
+            animation: zoomIn 2s ease-out;
+        }
+
+        h1,
+        h2 {
+            color: #0a0b0c;
+        }
+
+        header h1 {
+            font-family: "Audiowide", sans-serif;
+            font-size: 40px;
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #33485e;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #fafafa;
+            color: #100d0d;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 99.7%;
+            border: 2px solid white;
+        }
+
+
+        @keyframes typeWriter {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="font-effect-emboss">Dr.Nafisa Taha</h1>
+    </header>
+
+    <div class="box-container">
+        <img src="/images/DOC11.jpeg" alt="">
+        <div class="box1">
+            <h1>Freedom From Chronic Pain</h1>
+            <p>
+                Pain is a common symptom of most afflictions which affects our quality of life. It is a warning bell
+                that something is wrong with our body. Generally it is seen that patients neglect the first signs of
+                pain. eventually when the inability to perform simple day to day activity sets in, they suddenly become
+                conscious about their ill health. But in some of these cases unfortunately the pain becomes nagging and
+                chronic due to the patients negligence and procrastination to seek timely medical help.
+
+                Chronic pain affects our personal and professional life. Expensive painkillers without medical guidance
+                leads to other chronic problems like rise in blood pressure and blood sugar levels. Thus proper pain
+                management is important.
+
+                Treatment is tailor made for every patient with chronic pain after a thorough medical check up.Chronic
+                pain is reduced with the latest specialised injections called pain blocks. Blocks are nonsurgical way of
+                relieving the pain. Blocks are given for problems arising out of lifestyle disorders, due to ageing, and
+                in people who cannot tolerate surgical procedures due to heart problems, kidney and liver problems and
+                so on. Pain blocks reduce the patients pain significantly and allow them to lead a life without
+                suffering, with dignity and independence.
+
+                Common conditions managed are Low back pain, neck pain, headache, migraine, knee and joint pains,
+                postoperative pains, nerve pains (diabetic neuropathy), cancer pain, musculoskeletal pains and any pain
+                of more than 1 to 3 months of duration which is not relieved by medicines. Our aim is to reduce the
+                physical suffering and pain .No one should suffer from pain when Safe, Scientific and Specialised non
+                surgical treatment options are available because the Quality of Every Life Matters.<br><br>
+                Reference:-
+                <a
+                    href="https://www.practo.com/healthfeed/freedom-from-chronic-pain-7742/post">https://www.maxhealthcare.in/blogs/breast-cancer-in-young-women</a>
+
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Doctor Research Blog</p>
+    </footer>
+
+</body>
+
+</html>

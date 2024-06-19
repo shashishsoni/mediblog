@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      /* height: 100vh; */
+
+
+    }
+
+    .container {
+      position: relative;
+      width: 1000px;
+      height: calc(100% - 100px);
+      /* 100px for header and footer combined */
+      padding: 20px;
+      background: #d39dcc;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      animation: fade-in 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 0;
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px; 
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #bf75af;
+      color: #fff;
+      text-align: center;
+    }
+
+    tbody tr {
+      transition: background-color 0.3s ease;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    tbody tr:hover {
+      background-color: #e2d1dc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-danger {
+      color: #fff;
+      background-color: #a875a9;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn-danger:hover {
+      background-color: #d097c8;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div id="header-placeholder"></div>
+  </div>
+
+  <div class="container">
+    <h2>Review Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Review ID</th>
+          <th>Review Type</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>123</td>
+          <td>Heart</td>
+          <td>Approved</td>
+          <td>
+            <button class="btn btn-danger">Review</button>
+            <button class="btn btn-danger">delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>456</td>
+          <td>Lungs</td>
+          <td>Pending</td>
+          <td>
+            <button class="btn btn-danger">Review</button>
+            <button class="btn btn-danger">delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+<div id="footer-placeholder"></div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch("header.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+
+    // fetch("footer.html")
+    //   .then((response) => response.text())
+    //   .then((data) => {
+    //     document.getElementById("footer-placeholder").innerHTML = data;
+    //   });
+  });
+
+  function toggleSidebar() {
+    document.getElementById("mySidebar").classList.toggle("show");
+  }
+
+  function openSidebar(content) {
+    document.getElementById("mySidebar").classList.toggle("show");
+    // You can add logic here to handle the content based on the clicked link (patient, doctor, community, help)
+    console.log("Clicked on: " + content);
+  }
+
+</script>
+
+</html>

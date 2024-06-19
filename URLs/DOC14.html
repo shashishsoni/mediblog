@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Navneet singh</title> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3c7f0;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 0rem 0;
+            text-align: center;
+            border: 2px solid white;
+        }
+
+        .box-container {
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 95%;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(110, 218, 242, 0.1);
+            position: relative;
+            overflow: hidden; 
+        }
+
+        .box1 {
+            flex: 1;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-out;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .box1 h1 {
+            text-align: center;
+            color: #0d0909;
+            padding-top: 0px;
+            font-family: "Sofia", sans-serif;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typeWriter 4s steps(40) 1s forwards;
+        }
+
+        .box1 p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            opacity: 0; 
+            animation: fadeIn 3s ease-out 1s forwards;
+            color: black;
+        }
+
+        img {
+            border-radius: 250px;
+            margin-top: 100px;
+            margin-right: 30px;
+            max-width: 100%;
+            animation: zoomIn 2s ease-out;
+        }
+
+        h1,
+        h2 {
+            color: #0a0b0c;
+        }
+
+        header h1 {
+            font-family: "Audiowide", sans-serif;
+            font-size: 40px;
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #33485e;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #fafafa;
+            color: #100d0d;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 99.7%;
+            border: 2px solid white;
+        }
+
+       
+        @keyframes typeWriter {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="font-effect-emboss">DR. Navneet Singh</h1>
+    </header>
+
+    <div class="box-container">
+        <img src="/images/DOC14.png" alt="">
+        <div class="box1">
+            <h1>Cancer care challenges </h1>
+            <p>
+                More than a decade ago, a void existed in thoracic oncology services being offered
+                 at my medical institute in India. Therefore, I spent my first years at the lung 
+                 cancer clinic standardizing and streamlining our procedures to deliver high-quality care.
+                  Patients who seek treatment at our clinic often travel great distances. It provides them
+                   and me great satisfaction when I give them the time they need, despite the big crowd of
+                    other patients waiting outside my outpatient room.<br><br>
+                It also gives me great satisfaction when patients can be treated with minimal side effects and
+                 they experience both relief in their symptoms as well as successful treatment. For many people,
+                  especially those with metastatic lung cancer, a complete cure is not possible; however, for 
+                  several of these patients, targeted therapy may be possible. <br><br>
+                  On occasions, I’ve had patients brought into the clinic in a wheelchair, and after targeted treatments, 
+                  they have walked into their follow-up appointments on their own, smiling and without help. This is one of the things
+                     that makes my day. That’s why our clinic aims to provide molecular testing for genetic changes,
+                   called mutations, in the EGFR and ALK genes whenever it is indicated.<br>
+                   Specialized cancer care is important for many reasons, including avoiding a misdiagnosis.
+                    For example, tuberculosis and lung cancer symptoms overlap, as do several of their findings 
+                    on chest x-rays and CT scans. In India, where tuberculosis is common, patients with limited
+                     access to experienced health care providers may get treated first with tuberculosis drugs
+                      before a diagnosis of lung cancer is ultimately made. Greater awareness about lung cancer
+                       and the approach needed to establish its diagnosis is gradually helping reduce the percentage 
+                       of patients in whom this misdiagnosis occurs.<br>
+Another limitation in India is the availability of certain diagnostic and treatment options that may have been introduced
+ in developed countries a few years ago. Precision medicine has witnessed rapid advances in recent years, such as highly 
+ focused radiation therapy techniques, immunotherapies, monoclonal antibodies, and many more. All of these therapies are
+  expensive, and their introduction to many people in India will require financial help from both government and nongovernment 
+  organizations.
+
+                
+                Reference:-
+                <a
+                    href="https://www.cancer.net/blog/2019-11/cancer-my-community-indias-unique-cancer-care-challenges">https://www.cancer.net/blog/2019-11/cancer-my-community-indias-unique-cancer-care-challenges</a>
+
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Doctor Research Blog</p>
+    </footer>
+
+</body>
+
+</html>

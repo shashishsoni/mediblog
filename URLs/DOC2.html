@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Scott Lundstrom</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3c7f0;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 0rem 0;
+            text-align: center;
+            border: 2px solid white;
+        }
+
+        .box-container {
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 95%;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(110, 218, 242, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box1 {
+            flex: 1;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-out;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .box1 h1 {
+            text-align: center;
+            color: #0d0909;
+            padding-top: 0px;
+            font-family: "Sofia", sans-serif;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typeWriter 4s steps(40) 1s forwards;
+        }
+
+        .box1 p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            opacity: 0;
+            animation: fadeIn 3s ease-out 1s forwards;
+            color: black;
+        }
+
+        img {
+            border-radius: 250px;
+            margin-top: 100px;
+            margin-right: 30px;
+            max-width: 100%;
+            animation: zoomIn 2s ease-out;
+        }
+
+        h1,
+        h2 {
+            color: #0a0b0c;
+        }
+
+        header h1 {
+            font-family: "Audiowide", sans-serif;
+            font-size: 40px;
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #33485e;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #fafafa;
+            color: #100d0d;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 99.7%;
+            border: 2px solid white;
+        }
+
+
+        @keyframes typeWriter {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="font-effect-emboss">Dr. Scott Lundstrom</h1>
+    </header>
+
+    <div class="box-container">
+        <img src="/images/DOC2.jpeg" alt="">
+        <div class="box1">
+            <h1>Deliver smarter patient care with integrated patient records</h1>
+            <p>
+                The Data Deluge in Healthcare: How OpenText Documentum Offers a Solution
+                The healthcare industry faces a tidal wave of data. Patient information goes far beyond traditional
+                Electronic Medical Records (EMRs). Emails, letters, referrals, images, and even handwritten notes
+                contribute to a vast trove of unstructured data. According to the University of Pittsburgh Medical
+                Center, a staggering 80% of a patient's medical record can be unstructured [1]. This valuable
+                information often resides in isolated silos, hindering care delivery and frustrating both patients and
+                providers.
+
+                The Struggles of Disparate Data
+
+                The current state of healthcare data management presents several challenges:
+
+                Limited Accessibility: A significant portion of patient information remains inaccessible, locked away in
+                disparate systems. Fax machines, a relic of the past, are still a dominant communication method between
+                providers and payers. This fragmented data makes it difficult for healthcare professionals to get a
+                complete picture of a patient's medical history, potentially leading to misdiagnosis or delayed
+                treatment.
+                Silos of Legacy Data: Legacy systems and archived data often contain valuable insights, but they are
+                often isolated and inaccessible in their current form. This untapped information could be crucial for
+                understanding a patient's long-term health trends and risk factors.
+                Incomplete Patient View: The fragmented nature of data prevents healthcare providers from forming a
+                comprehensive view of the patient. Social determinants of health, crucial factors influencing overall
+                well-being, often remain outside the traditional EMR scope.
+                OpenText Documentum for Healthcare: Bridging the Gaps
+
+                OpenText Documentum for Healthcare tackles these challenges head-on by offering an integrated patient
+                record solution. This platform empowers healthcare institutions to transform the way they manage,
+                access, and share patient information, ultimately optimizing care delivery across the continuum.
+
+                Key Features and Benefits of Documentum for Healthcare:
+
+                Uniting Fragmented Data: Documentum bridges the gaps between disparate systems. It integrates data from
+                legacy EMRs, paper records, and social determinants of health data. This allows healthcare providers to
+                create a unified and patient-centric view of all essential information, regardless of source, location,
+                or format. This holistic view empowers better-informed decisions and improved patient outcomes.
+
+                Digitizing Patient Documents: Documentum facilitates the digitization of all patient documents,
+                including medical images. This eliminates the need for paper records and ensures all information is
+                readily available in a secure and easily accessible electronic format. Additionally, Documentum
+                integrates clinical media seamlessly within clinical applications, streamlining the workflow for
+                healthcare professionals.
+
+                Enhanced Care Team Collaboration: Improved access to patient information is crucial for effective care
+                coordination. Documentum provides a secure platform for authorized healthcare professionals within the
+                organization to access all patient information at the point of care. This fosters collaboration among
+                the care team, leading to more efficient and patient-centered care.
+
+                Compliance and Secure Information Sharing: Documentum ensures secure information sharing within and
+                beyond healthcare organizations. The platform adheres to Integrating the Healthcare Enterprise (IHE)
+                standards, which govern secure data exchange across different healthcare systems. This allows for
+                seamless information sharing while upholding patient privacy regulations.
+
+                The Road to a More Efficient and Patient-Centered Healthcare System
+
+                By leveraging OpenText Documentum for Healthcare, healthcare organizations can unlock the true potential
+                of their vast patient data. A unified and easily accessible patient record empowers informed
+                decision-making, improves care coordination, and ultimately leads to better patient outcomes. In a
+                data-driven healthcare landscape, Documentum offers a powerful solution for navigating the data deluge
+                and transforming the way we deliver care.<br><br>
+                Reference:-
+                <a
+                    href="https://blogs.opentext.com/deliver-smarter-patient-care-with-integrated-patient-records/">https://blogs.opentext.com/deliver-smarter-patient-care-with-integrated-patient-records/</a>
+
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Doctor Research Blog</p>
+    </footer>
+
+</body>
+
+</html>

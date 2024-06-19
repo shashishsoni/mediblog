@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Jeffrey Meyerhardt</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3c7f0;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 0rem 0;
+            text-align: center;
+            border: 2px solid white;
+        }
+
+        .box-container {
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 95%;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(110, 218, 242, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box1 {
+            flex: 1;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-out;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .box1 h1 {
+            text-align: center;
+            color: #0d0909;
+            padding-top: 0px;
+            font-family: "Sofia", sans-serif;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typeWriter 4s steps(40) 1s forwards;
+        }
+
+        .box1 p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            opacity: 0;
+            animation: fadeIn 3s ease-out 1s forwards;
+            color: black;
+        }
+
+        img {
+            border-radius: 250px;
+            margin-top: 100px;
+            margin-right: 30px;
+            max-width: 100%;
+            animation: zoomIn 2s ease-out;
+        }
+
+        h1,
+        h2 {
+            color: #0a0b0c;
+        }
+
+        header h1 {
+            font-family: "Audiowide", sans-serif;
+            font-size: 40px;
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #33485e;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #fafafa;
+            color: #100d0d;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 99.7%;
+            border: 2px solid white;
+        }
+
+
+        @keyframes typeWriter {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="font-effect-emboss">Dr. Jeffrey Meyerhardt</h1>
+    </header>
+
+    <div class="box-container">
+        <img src="/images/DOC4.jpeg" alt="">
+        <div class="box1">
+            <h1>Navigating Colorectal Cancer: Staging, Molecular Testing, and Side Effect Management</h1>
+            <p>
+                Colorectal cancer management requires a multifaceted approach encompassing staging, molecular testing,
+                and side effect management. Staging is essential for assessing cancer spread, focusing on tumor invasion
+                depth (T stage) and lymph node involvement (N stage). Post-surgery, T stage indicates tumor penetration
+                through the bowel wall, guiding treatment decisions based on cancer aggressiveness. Lymph node
+                involvement (N stage) predicts cancer spread likelihood beyond the primary site, aiding treatment
+                planning and prognostication.
+
+                Rectal cancer staging often involves preoperative imaging like MRI or endoscopic ultrasound to determine
+                T and N stages, facilitating personalized treatment planning with neoadjuvant therapy consideration.
+
+                Molecular testing identifies genetic mutations driving colorectal cancer, particularly crucial in
+                metastatic cases. Recommended for metastatic cancer, molecular testing identifies actionable mutations
+                dictating treatment response and prognosis, such as RAS or BRAF mutations, guiding personalized
+                therapeutic approaches. Additionally, testing for microsatellite instability assesses genetic risks,
+                identifying candidates for immunotherapy across all stages.
+
+                Effective side effect management is crucial for patient comfort and treatment adherence. Chemotherapy
+                commonly induces nausea, fatigue, hair loss, and gastrointestinal disturbances, managed with medications
+                and supportive care. Radiation therapy may lead to skin irritation, fatigue, and gastrointestinal
+                symptoms, requiring close monitoring and supportive care interventions. Targeted therapy may induce
+                specific side effects like rash, diarrhea, and hypertension, necessitating proactive management.
+
+                Open communication between patients and healthcare providers is vital throughout the colorectal cancer
+                journey. Patients are encouraged to discuss concerns, ask questions, and promptly report symptoms. This
+                facilitates personalized treatment planning, optimal side effect management, and timely intervention for
+                complications, ultimately improving patient outcomes and quality of life.
+
+                In conclusion, a comprehensive approach to colorectal cancer management integrates staging, molecular
+                testing, and side effect management. Understanding the significance of these components empowers
+                patients and caregivers to actively participate in treatment decisions, advocate for their well-being,
+                and navigate the challenges of colorectal cancer with resilience and confidence. Effective communication
+                with healthcare providers ensures personalized care, optimized treatment outcomes, and improved quality
+                of life for patients affected by colorectal cancer.<br><br>
+                Reference:-
+                <a
+                    href="https://www.cancer.net/blog/2018-03/just-diagnosed-with-colorectal-cancer-answers-expert">https://www.cancer.net/blog/2018-03/just-diagnosed-with-colorectal-cancer-answers-expert</a>
+
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Doctor Research Blog</p>
+    </footer>
+
+</body>
+
+</html>

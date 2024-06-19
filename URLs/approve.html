@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor's Review</title>
+  <style>
+    /* Your CSS styles go here */
+
+    body {
+      font-family: "Arial", sans-serif;
+      background: #ffffff;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* height: 100vh; */
+      position: relative;
+
+    }
+
+    .container {
+      position: relative;
+      max-width: 60%;
+      height: calc(100% - 100px);
+      /* 100px for header and footer combined */
+      padding: 20px;
+      background: #d39dcc;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      animation: fade-in 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 0;
+      margin-top: 100px;
+      margin-bottom: 20px;
+      /* margin: auto; */
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .details {
+      margin-bottom: 30px;
+    }
+
+    .details label {
+      display: inline-block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .details input,
+    .details textarea {
+      padding: 12px;
+      width: calc(100% - 24px);
+      box-sizing: border-box;
+      margin-bottom: 16px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      transition: border-color 0.3s ease;
+    }
+
+    .details input:focus,
+    .details textarea:focus {
+      outline: none;
+      border-color: #5c9edb;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    label.radio-label {
+      padding: 14px;
+      flex: 1;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: center;
+      color: #777;
+      transition: background-color 0.3s ease;
+    }
+
+    label.radio-label:hover {
+      background-color: #f0f0f0;
+    }
+
+    input[type="radio"]:checked+label.radio-label {
+      color: #fff;
+    }
+
+    #approveRadio:checked+label.radio-label {
+      background-color: #a65880;
+    }
+
+    #disapproveRadio:checked+label.radio-label {
+      background-color: #a65880;
+    }
+
+    #submitBtn {
+      padding: 14px;
+      width: 100%;
+      background-color: #f8f2f8;
+      color: #777a7d;
+      border: none;
+      font: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #submitBtn:hover {
+      background-color: #5f3e60;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      .details input,
+      .details textarea {
+        width: calc(100% - 20px);
+      }
+    }
+
+    #footer-placeholder {
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <div class="container">
+    <h2>Doctor's Review</h2>
+    <form action="/doctor/post_review" method="post">
+      <div class="details">
+        <label for="reviewId">Review ID:</label>
+        <input type="text" id="reviewId" name="reviewId" />
+
+        <label for="reviewType">Review Type:</label>
+        <input type="text" id="reviewType" name="reviewType" />
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="doctor_id">Doctor Id</label>
+        <input type="text" id="doctor_id" name="doctor_id" />
+
+        <label for="doctorsSuggestion">Doctor's Suggestion:</label>
+        <textarea id="doctorsSuggestion" name="doctorsSuggestion" placeholder="Enter doctor's suggestion"></textarea>
+      </div>
+
+      <div class="button-container">
+        <input type="radio" id="approveRadio" name="approval" value="Approve" class="hidden-radio" />
+        <label for="approveRadio" class="radio-label">Approve</label>
+
+        <input type="radio" id="disapproveRadio" name="approval" value="Disapprove" class="hidden-radio" />
+        <label for="disapproveRadio" class="radio-label">Disapprove</label>
+      </div>
+
+      <br />
+
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+  </div>
+  <div id="footer-placeholder"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      // fetch("footer.html")
+      //   .then((response) => response.text())
+      //   .then((data) => {
+      //     document.getElementById("footer-placeholder").innerHTML = data;
+      //   });
+    });
+
+    function toggleSidebar() {
+      document.getElementById("mySidebar").classList.toggle("show");
+    }
+
+    function openSidebar(content) {
+      document.getElementById("mySidebar").classList.toggle("show");
+      // You can add logic here to handle the content based on the clicked link (patient, doctor, community, help)
+      console.log("Clicked on: " + content);
+    }
+
+  </script>
+
+  </script>
+</body>
+
+</html>

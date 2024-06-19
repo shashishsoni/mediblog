@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Utsav</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3c7f0;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 0rem 0;
+            text-align: center;
+            border: 2px solid white;
+        }
+
+        .box-container {
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 95%;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(110, 218, 242, 0.1);
+            position: relative;
+            overflow: hidden; 
+        }
+
+        .box1 {
+            flex: 1;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-out;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .box1 h1 {
+            text-align: center;
+            color: #0d0909;
+            padding-top: 0px;
+            font-family: "Sofia", sans-serif;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typeWriter 4s steps(40) 1s forwards;
+        }
+
+        .box1 p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            opacity: 0; 
+            animation: fadeIn 3s ease-out 1s forwards;
+            color: black;
+        }
+
+        img {
+            border-radius: 250px;
+            margin-top: 100px;
+            margin-right: 30px;
+            max-width: 100%;
+            animation: zoomIn 2s ease-out;
+        }
+
+        h1,
+        h2 {
+            color: #0a0b0c;
+        }
+
+        header h1 {
+            font-family: "Audiowide", sans-serif;
+            font-size: 40px;
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #33485e;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #fafafa;
+            color: #100d0d;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 99.7%;
+            border: 2px solid white;
+        }
+
+       
+        @keyframes typeWriter {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="font-effect-emboss">Dr.Utsav</h1>
+    </header>
+
+    <div class="box-container">
+        <img src="/images/DOC9.jpeg" alt="">
+        <div class="box1">
+            <h1>Healthy Sleep for a Healthy Heart</h1>
+            <p>
+                Breast cancer is known to be the most common cancer among women globally, accounting for roughly 2.3
+                million cases each year. Among all breast cancer cases, 10-20% of new cancers occur in women under the
+                age of 40, which poses a major health challenge. Conventionally, cancer is known to be a disease of the
+                ‘elderly’, and thus, the rising number of cases in young women comes as a surprise to many. <br><br>
+
+                <strong>Breast cancer in young women presents with the same symptoms as that in older women:</strong>
+                namely, lump with or without pain, watery or bloody nipple discharge or ulceration or any change in the
+                breast skin such as a dimple or redness or swelling. However, often, these changes are overlooked
+                because benign/‘hormonal’ breast problems are far more common in this age group. Neither patients nor
+                the health community expect a sinister diagnosis at this age, leading to delayed investigations and
+                advanced-stage diagnosis. Many studies have reported that breast cancer in the young is picked up at
+                advanced stages, leading to poor outcomes. This delay in diagnosis is due to a lack of screening or
+                routine tests in young women, stigma and hesitation to seek medical help and limited accuracy of tests
+                such as mammograms in this population. Pregnancy-associated breast cancer is also a rare type of breast
+                cancer that is often diagnosed quite late because early signs are missed as normal changes during
+                pregnancy and breastfeeding.<br><br>
+                The biological type of breast cancer in the young is also different: it is more commonly Hormone
+                receptor negative or HER2 positive, subtypes which are aggressive in nature with challenging treatment
+                pathways. This adds to the challenge for the treating team as the need for chemotherapy and targeted
+                therapy is often greater.<br><br>
+                Conversations with the surgeon about the safety of breast conservation, i.e. removal of the tumour alone
+                with oncoplasty or whole breast reconstruction using implants or tissue transfer from the abdomen, etc.,
+                are of immense importance to ensure the preservation of a young woman’s image and quality of life. The
+                impact of breast cancer diagnosis and treatment on future fertility also needs to be carefully discussed
+                in this age group.<br><br>
+                There are various options, such as embryo or egg preservation, which can be explored with a fertility
+                specialist. Genetic testing after detailed family history evaluation and counselling is also recommended
+                to find out if the cancer is hereditary in nature, which can have implications for the patient and her
+                family.<br><br>
+                The emotional toll of the diagnosis of breast cancer in this population is often huge. Coping with the
+                fear of danger to life, body changes, and potential infertility can be overwhelming. The need for
+                psychological and emotional support needs to be sensitively catered to through counselling and support
+                groups.<br><br>
+                Reference:-
+                <a
+                    href="https://www.maxhealthcare.in/blogs/breast-cancer-in-young-women">https://www.maxhealthcare.in/blogs/breast-cancer-in-young-women</a>
+
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Doctor Research Blog</p>
+    </footer>
+
+</body>
+
+</html>

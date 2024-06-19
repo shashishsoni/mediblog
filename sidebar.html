@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sidebar Example</title>
+</head>
+<style>
+    body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.content {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+.open-sidebar {
+  width: 250px;
+}
+
+.open-content {
+  margin-left: 250px;
+}
+
+</style>
+<body>
+
+<div class="sidebar" id="mySidebar">
+  <a href="#" onclick="openSidebar('patient')">Patient</a>
+  <a href="#" onclick="openSidebar('doctor')">Doctor</a>
+  <a href="#" onclick="openSidebar('community')">Community</a>
+  <a href="#" onclick="openSidebar('help')">Help</a>
+</div>
+<div class="content">
+  <!-- Your main content goes here -->
+</div>
+
+<script src="">
+    function openSidebar(content) {
+  document.getElementById("mySidebar").classList.toggle("open-sidebar");
+  document.getElementsByClassName("content")[0].classList.toggle("open-content");
+  // You can add logic here to handle the content based on the clicked link (patient, doctor, community, help)
+  console.log("Clicked on: " + content);
+}
+
+</script>
+</body>
+</html>

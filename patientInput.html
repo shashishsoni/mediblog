@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Review Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        /* Your CSS styles go here */
+        body {
+            font-family: "Arial", sans-serif;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: 110vh; */
+            margin: 0;
+            position: relative;
+            flex-direction: column;
+        }
+
+        .container {
+            position: relative;
+            max-width: 90%;
+            width: 900px;
+            height: calc(100% - 100px);
+            /* 100px for header and footer combined */
+            padding: 20px;
+            background: #d39dcc;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fade-in 0.5s ease;
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            z-index: 0;
+            margin-top: 100px;
+            margin-bottom: 20px;
+
+        }
+
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        label {
+            font-family: "Arial", sans-serif;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+
+        button[type="submit"] {
+            min-width: 240px;
+            margin: 0 auto;
+            border: none;
+            color: #fff;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: .3em;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+            background: none;
+
+            span {
+                position: relative;
+                z-index: 2;
+                display: block;
+                padding: 1.25em .5em 1.35em .5em;
+            }
+        }
+
+        button[type="submit"] {
+            span {
+                background: #5f3e60;
+                transition: .3s;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: -10%;
+                    width: 95%;
+                    height: 30%;
+                    background: inherit;
+                    transform: translateX(-50%);
+                    filter: blur(10px);
+                    opacity: 0;
+                    transition: .3s;
+                }
+            }
+
+            &:hover {
+                span {
+                    transform: translateY(-6px);
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="%23333"><path d="M2 9.593l12 12 12-12z"/></svg>');
+            background-repeat: no-repeat;
+            background-position-x: calc(100% - 10px);
+            background-position-y: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <div class="container">
+        <h2>Review Form</h2>
+        <form action="/review/post" method="post">
+            <div class="form-group">
+                <label for="patient_id">Patient ID:</label>
+                <input type="text" id="patient_id" name="patient_id" placeholder="Enter Patient ID" required />
+            </div>
+            <div class="form-group">
+                <label for="review_type">Select Community:</label>
+                <select id="review_type" name="review_type" required>
+                    <option value="heart">Heart</option>
+                    <option value="cancer">Cancer</option>
+                    <option value="general">General</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="review_decs">Description:</label>
+                <textarea id="review_decs" name="review_decs" placeholder="Enter description" rows="4"
+                    required></textarea>
+            </div>
+            <button type="submit"><span>Submit</span></button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("header-placeholder").innerHTML = data;
+                });
+
+                // fetch("footer.html")
+                //     .then((response) => response.text())
+                //     .then((data) => {
+                //         document.getElementById("footer-placeholder").innerHTML = data;
+                //     });
+        });
+
+        function toggleSidebar() {
+            document.getElementById("mySidebar").classList.toggle("show");
+        }
+
+        function openSidebar(content) {
+            document.getElementById("mySidebar").classList.toggle("show");
+            // You can add logic here to handle the content based on the clicked link (patient, doctor, community, help)
+            console.log("Clicked on: " + content);
+        }
+
+    </script>
+</body>
+<div id="footer-placeholder"></div>
+
+</html>
