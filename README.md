@@ -32,3 +32,9 @@ Open the index.html file in a browser to view the website.
 Contributions
 It is the College project task that i have built with my teammates.
 
+<h1>This the final webiste for the project</h1>
+
+![screencapture-shashishsoni-github-io-mediblog-2024-09-14-22_29_33](https://github.com/user-attachments/assets/999ee01b-f083-48e6-b660-896dcdba63bf)
+![screencapture-shashishsoni-github-io-mediblog-patientInput-html-2024-09-14-22_30_04](https://github.com/user-attachments/assets/9b360897-b9c3-4672-83f4-4aabd8c4a61b)
+![screencapture-shashishsoni-github-io-mediblog-doctor-html-2024-09-14-22_30_26](https://github.com/user-attachments/assets/934ddbf6-3e3f-4b0d-9ab5-d4f7b8075466)
+<img width="515" alt="Screenshot 2024-09-14 223226" src="https://github.com/user-attachments/assets/5efcf610-81e9-4216-87dd-4badd4a1e5e7">
